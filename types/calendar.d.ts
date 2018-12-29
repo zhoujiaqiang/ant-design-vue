@@ -25,4 +25,10 @@ export declare class ACalendar extends AntdVueComponent {
   validRange: [Moment, Moment]
 
   value: Moment
+
+  $emit(eventName: 'panelChange', date: Moment, mode: string): this
+
+  $emit(eventName: 'select', date: Moment): this
+
+  $emit(eventName: 'change', date: Moment): this
 }

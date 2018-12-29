@@ -1,10 +1,10 @@
 import { AntdVueComponent, AntdVueComponentSize } from './component';
 
-type ButtonType = 'primary' | 'dashed' | 'danger';
+export type ButtonType = 'primary' | 'dashed' | 'danger';
 
-type ButtonShape = 'circle' | 'default';
+export type ButtonShape = 'circle' | 'default';
 
-type HtmlType = 'button' | 'reset' | 'submit';
+export type HtmlType = 'button' | 'reset' | 'submit';
 
 export declare class AButton extends AntdVueComponent {
   type: ButtonType
@@ -24,6 +24,8 @@ export declare class AButton extends AntdVueComponent {
   icon: string
 
   block: boolean
+
+  $emit(eventName: 'click', event: KeyboardEvent): this
 }
 
 export declare class AButtonGroup extends AntdVueComponent {

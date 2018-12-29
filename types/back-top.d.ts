@@ -6,4 +6,5 @@ export declare class ABackTop extends AntdVueComponent {
 
   visibilityHeight: number
 
+  $emit(eventName: 'click', event: KeyboardEvent): this
 }

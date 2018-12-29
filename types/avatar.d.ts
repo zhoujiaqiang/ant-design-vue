@@ -1,6 +1,6 @@
 import { AntdVueComponent, AntdVueComponentSize } from './component';
 
-declare enum shape { 'circle', 'square' }
+type shape = 'circle' | 'square'
 
 /** AAvatar Layout Component */
 export declare class AAvatar extends AntdVueComponent {

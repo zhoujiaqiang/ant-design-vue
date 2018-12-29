@@ -21,6 +21,10 @@ export declare class ABreadcrumb extends AntdVueComponent {
   routes: object[]
 
   separator: string | VNode
+
+  $slots: {
+    separator: VNode[]
+  }
 }
 
 export declare class ABreadcrumbItem extends AntdVueComponent {

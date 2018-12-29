@@ -1,10 +1,9 @@
 import { AntdVueComponent } from './component';
 import { VNode, Component } from 'vue';
 
+type FromIconfontCN = { scriptUrl: string, extraCommonProps: object };
 export declare class AIcon extends AntdVueComponent {
   type: string;
-
-  style: any;
 
   theme: 'filled' | 'outlined' | 'twoTone';
 
@@ -18,6 +17,6 @@ export declare class AIcon extends AntdVueComponent {
 
   static getTwoToneColor: () => string;
 
-  createFromIconfontCN: ({ scriptUrl: string, extraCommonProps: object }) => Component;
+  createFromIconfontCN: (value: FromIconfontCN) => Component;
 
 }

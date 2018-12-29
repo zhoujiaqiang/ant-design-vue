@@ -7,4 +7,6 @@ export declare class AAffix extends AntdVueComponent {
   offsetTop: number
 
   target: () => HTMLElement
+
+  $emit(eventName: 'change', value: boolean): this
 }

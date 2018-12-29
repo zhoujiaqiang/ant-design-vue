@@ -22,5 +22,13 @@ export declare class AAlert extends AntdVueComponent {
 
   type: Types
 
-  close: (e: MouseEvent) => void
+  $emit(eventName: 'close', event: KeyboardEvent): this
+
+  $slots: {
+    closeText: VNode[]
+
+    description: VNode[]
+
+    message: VNode[]
+  }
 }

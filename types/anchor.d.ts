@@ -14,6 +14,8 @@ export declare class AAnchor extends AntdVueComponent {
   offsetTop: number
 
   showInkInFixed: boolean
+
+  $emit(eventName: 'click', event: KeyboardEvent, link: object): this
 }
 
 
@@ -22,4 +24,8 @@ export declare class ALink extends AntdVueComponent {
   href: string
 
   title: string | VNode
+
+  $slots: {
+    title: VNode[]
+  }
 }
